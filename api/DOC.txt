@@ -1,0 +1,137 @@
+=================Registration====================
+
+
+schema : User
+attributes : username, password, email
+
+1) Api for creating a new account
+
+    url : http://127.0.0.1:8000/api/register/
+    method:post
+    body:{username, password, email}
+    authentication:nill
+    ststus:completed
+
+
+=================Token====================
+
+
+2) Api for fetching token
+
+    url : http://127.0.0.1:8000/api/token/
+    method:post
+    body:{username, password}
+    authentication:nill
+    ststus:completed
+
+
+=================Expense====================
+
+
+schma : Expense
+attributes : title, amount, owner, category, priority
+
+
+1) Api for listing expenses 
+
+    url : http://127.0.0.1:8000/api/expenses/
+    method:get
+    body:nill
+    authentication:token
+    ststus:completed
+
+2) Api for Adding expenses 
+
+    url : http://127.0.0.1:8000/api/expenses/
+    method:post
+    body:{title,amount,category,priority}
+    authentication:token
+    ststus:completed
+
+3) Api for view detail expense
+
+    url : http://127.0.0.1:8000/api/expenses/id/
+    method:get
+    body:nill
+    authentication:token
+    ststus:completed
+
+4) Api for update a expense
+
+    url : http://127.0.0.1:8000/api/expenses/id/
+    method:put
+    body:{title,amount,category,priority}
+    authentication:token
+    ststus:completed
+
+5) Api for update a expense
+
+    url : http://127.0.0.1:8000/api/expenses/id/
+    method:delete
+    body:nill
+    authentication:token
+    ststus:completed
+
+ 6) Api for expense summary
+
+    url : http://127.0.0.1:8000/api/expenses/summary/
+    method:get
+    body:nill
+    authentication:token
+    ststus:completed   
+
+
+    =================Income====================
+
+
+schma : Income
+attributes : title, amount, owner, category
+
+
+1)Api for listing incomes
+
+url : http://127.0.0.1:8000/api/incomes/
+    method:get
+    body:nill
+    authentication:token
+    ststus:completed
+
+2) Api for Adding expenses 
+
+    url : http://127.0.0.1:8000/api/incomes/
+    method:post
+    body:{title,amount,category}
+    authentication:token
+    ststus:completed
+
+3) Api for view detail expense
+
+    url : http://127.0.0.1:8000/api/incomes/id/
+    method:get
+    body:nill
+    authentication:token
+    ststus:completed
+
+4) Api for update a expense
+
+    url : http://127.0.0.1:8000/api/incomes/id/
+    method:put
+    body:{title,amount,category}
+    authentication:token
+    ststus:completed
+
+5) Api for update a expense
+
+    url : http://127.0.0.1:8000/api/incomes/id/
+    method:delete
+    body:nill
+    authentication:token
+    ststus:completed
+
+ 6) Api for income summary
+
+    url : http://127.0.0.1:8000/api/expenses/summary/
+    method:get
+    body:nill
+    authentication:token
+    ststus:completed   
